@@ -24,10 +24,9 @@ define s = Character("Satanichia Kurumizawa McDowell", color="FF0000")          
 define ccb = Character("CyberCatBoy", color="FF00FF")                               # Germán, magenta
 define rc = Character("Ron Cola", color="9D00FF")                                   # Carlos, moraito
 define nc = Character("Nigeru-chan", color="804000")                                # Arturo, marrón
-define jc = Character("Jean Charles", color="FF69B4")                               # Juan Carlos, rosita maricón
+define jc = Character("Jean Charles", color="FF69B4")                               # Juan Carlos, rosita mariconcete
 
 # -----------------------------------------------------------------------------------------------------------------------
-
 
 # The game starts here.
 label start:
@@ -40,11 +39,11 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-    show eileen happy
+    show Patchouli Knowledge happy
 
     # These display lines of dialogue.
-    e "You've created a new Ren'Py game."
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    p "You've created a new Ren'Py game."
+    p "Once you add a story, pictures, and music, you can release it to the world!"
 
     with fade
 
@@ -66,8 +65,8 @@ label puerta:
 
     scene black
     with dissolve
-
-    m "Sabía que vendrías..."
+    
+    p "Sabía que vendrías..."
 
     "La puerta se cierra detrás de ti."
 
