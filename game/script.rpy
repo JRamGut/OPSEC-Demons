@@ -1,17 +1,35 @@
 ﻿# The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+# CHARACTERS
+# -----------------------------------------------------------------------------------------------------------------------
 
-define od = Character("OPSEC Demon")
-define gr = Character("Germán Ramos")
-define rc = Character("Ron Cola")
-define n  = Character("Nigeru-chan")
-define e = Character("JZ")
+# OCs
+define od = Character("OPSEC Demon", color="FF0000")                                # OPSEC Demon, rojo
+define lpv = Character("La puta vieja", color="00FF00")                             # La puta vieja, verde
+
+# Touhou
+define c = Character("Cirno", color="FF69B4")                                       # Cirno, azul
+define r = Character("Reimu Hakurei", color="FF0000")                               # Reimu, rojo
+define p = Character("Patchouli Knowledge", color="9D00FF")                         # Patchouli, moraito
+
+# GNU/Linux/Open Source
+define e = Character("eMule", color="00FF00")                                       # eMule, verde
+define t = Character("Tux", color="FFFF00")                                         # Tux, amarillo
+
+# Otros
+define mm = Character("Monero Mommy", color="FFA500")                               # Monero Mommy, naranja
+define s = Character("Satanichia Kurumizawa McDowell", color="FF0000")              # Satania, rojo
+
+# Subnormales
+define ccb = Character("CyberCatBoy", color="FF00FF")                               # Germán, magenta
+define rc = Character("Ron Cola", color="9D00FF")                                   # Carlos, moraito
+define nc = Character("Nigeru-chan", color="804000")                                # Arturo, marrón
+define jc = Character("Jean Charles", color="FF69B4")                               # Juan Carlos, rosita maricón
+
+# -----------------------------------------------------------------------------------------------------------------------
 
 
 # The game starts here.
-
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -32,7 +50,7 @@ label start:
 
     "Es medianoche. Estás solo en una casa abandonada."
 
-    p "¿Qué ha sido ese ruido?"
+    gr "¿Qué ha sido ese ruido?"
 
     menu:
         "Abrir la puerta":
