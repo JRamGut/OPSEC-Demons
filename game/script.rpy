@@ -26,6 +26,8 @@ define rc = Character("Ron Cola", color="9D00FF")                               
 define nc = Character("Nigeru-chan", color="804000")                                # Arturo, marrón
 define jc = Character("Jean Charles", color="FF69B4")                               # Juan Carlos, rosita mariconcete
 
+define ab = Character("Angry Bird", color="FF0000")                                 # Angry Bird, rojo
+
 # -----------------------------------------------------------------------------------------------------------------------
 
 # The game starts here.
