@@ -30,6 +30,43 @@ define ab = Character("Angry Bird", color="FF0000")                             
 
 # -----------------------------------------------------------------------------------------------------------------------
 
+# IMAGES
+# -----------------------------------------------------------------------------------------------------------------------
+
+image tux = "images/tux.png"
+image tux drinking = "images/tux_drinking.gif"
+
+# -----------------------------------------------------------------------------------------------------------------------
+
+# POSITIONS
+# -----------------------------------------------------------------------------------------------------------------------
+
+transform center_left:
+    xalign 0.2
+    yalign 0.5
+
+transform center:
+    xalign 0.5
+    yalign 0.5
+
+transform center_right:
+    xalign 0.8
+    yalign 0.5
+
+transform lower_left:
+    xalign 0.2
+    yalign 1.0
+
+transform lower_center:
+    xalign 0.5
+    yalign 1.0
+
+transform lower_right:
+    xalign 0.8
+    yalign 1.0
+
+# -----------------------------------------------------------------------------------------------------------------------
+
 # The game starts here.
 label start:
 
@@ -38,26 +75,21 @@ label start:
     # images directory to show it.
     scene black
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-    show Patchouli Knowledge happy
-
-    # These display lines of dialogue.
-    p "You've created a new Ren'Py game."
-    p "Once you add a story, pictures, and music, you can release it to the world!"
-
     with fade
 
-    "Es medianoche. Estás solo en una casa abandonada."
+    "You hear a noise coming from the basement."
 
-    gr "¿Qué ha sido ese ruido?"
+    show tux drinking at center
+
+    t "¿What was that?"
+
+    show tux at center
 
     menu:
-        "Abrir la puerta":
+        "Open the door":
             jump puerta
 
-        "Salir de la casa":
+        "Leave the house":
             jump salida
 
     # This ends the game.
@@ -68,18 +100,18 @@ label puerta:
     scene black
     with dissolve
     
-    p "Sabía que vendrías..."
+    t "I knew you would come..."
 
-    "La puerta se cierra detrás de ti."
+    "The door closes behind you."
 
-    "FINAL 1: La habitación secreta."
+    "FINAL 1: The secret room."
     return
 
 label salida:
 
-    p "No pienso averiguar qué hay ahí dentro."
+    t "I don't plan to find out what's in there."
 
-    "Escapas de la casa antes del amanecer."
+    "You escape the house before dawn."
 
-    "FINAL 2: La huida."
+    "FINAL 2: The escape."
     return
