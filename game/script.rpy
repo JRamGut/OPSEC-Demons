@@ -11,12 +11,16 @@ define lpv = Character("La puta vieja", color="00FF00")                         
 define c = Character("Cirno", color="FF69B4")                                       # Cirno, azul
 define r = Character("Reimu Hakurei", color="FF0000")                               # Reimu, rojo
 define p = Character("Patchouli Knowledge", color="9D00FF")                         # Patchouli, moraito
+define e = Character("Eirin Yagokoro", color="E6E6FA")                              # Eirin, lila
 
 # GNU/Linux/Open Source
 define e = Character("eMule", color="00FF00")                                       # eMule, verde
 define t = Character("Tux", color="FFFF00")                                         # Tux, amarillo
+define c = Character("Clippy", color="9B9B9B")                                      # Clippy, gris
+define bb = Character("Bonzi Buddy", color="9D00FF")                                # Bonzi Buddy, moraito
 
 # Otros
+define m = Character("Monero", color="FFA500")                                      # Monero
 define mm = Character("Monero Mommy", color="FFA500")                               # Monero Mommy, naranja
 define s = Character("Satanichia Kurumizawa McDowell", color="FF0000")              # Satania, rojo
 
